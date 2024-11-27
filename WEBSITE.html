@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GameZone - Your Ultimate Gaming Store</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #111;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .header {
+            background-color: #1a1a1a;
+            padding: 20px 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .header .logo {
+            font-size: 30px;
+            font-weight: bold;
+            color: #f0a500;
+        }
+        .nav-links {
+            display: flex;
+            gap: 30px;
+        }
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+            font-size: 18px;
+        }
+        .nav-links a:hover {
+            color: #f0a500;
+        }
+        .hero-banner {
+            background-size: cover;
+            background-position: center;
+            text-align: center;
+            padding: 150px 20px;
+        }
+        .hero-banner h1 {
+            font-size: 60px;
+            color: #fff;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+        }
+        .hero-banner p {
+            font-size: 20px;
+            color: #f0a500;
+            margin-top: 10px;
+        }
+        .category-section {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            padding: 50px 0;
+        }
+        .category-box {
+            background-color: #333;
+            padding: 30px;
+            border-radius: 10px;
+            text-align: center;
+            width: 220px;
+            transition: transform 0.3s ease;
+        }
+        .category-box:hover {
+            transform: scale(1.05);
+        }
+        .category-box img {
+            width: 100%;
+            max-width: 200px; 
+            height: auto; 
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .category-box h3 {
+            font-size: 24px;
+            color: #f0a500;
+        }
+        .products-section {
+            background-color: #222;
+            padding: 60px 30px;
+        }
+        .products-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            justify-content: space-between;
+        }
+        .product-card {
+            background-color: #333;
+            padding: 20px;
+            border-radius: 10px;
+            width: 250px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+        .product-card img {
+            width: 100%;
+            max-width: 220px;
+            height: auto; 
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+        .product-card h4 {
+            font-size: 20px;
+            color: #fff;
+            margin-bottom: 10px;
+        }
+        .product-card .price {
+            font-size: 22px;
+            color: #f0a500;
+            margin-bottom: 15px;
+        }
+        .footer {
+            background-color: #1a1a1a;
+            padding: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #fff;
+        }
+        .footer a {
+            color: #f0a500;
+            text-decoration: none;
+        }
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+   
+    <div class="header">
+        <div class="logo">GameZone</div>
+        <div class="nav-links">
+            <a href="#">Home</a>
+            <a href="#">Games</a>
+            <a href="#">Accessories</a>
+            <a href="#">Offers</a>
+            <a href="#">Contact</a>
+        </div>
+    </div>
+
+   
+    <div class="hero-banner">
+        <h1>Welcome to GameZone</h1>
+        <p>Your ultimate destination for all things gaming!</p>
+    </div>
+
+  
+    <div class="category-section">
+        <div class="category-box">
+            <img src="C:\Users\shrey\Desktop\download (1).jpeg" alt="Action Games">
+            <h3>Action Games</h3>
+        </div>
+        <div class="category-box">
+            <img src="C:\Users\shrey\Desktop\download2.jpeg" alt="Adventure Games">
+            <h3>Adventure Games</h3>
+        </div>
+        <div class="category-box">
+            <img src="C:\Users\shrey\Desktop\download3.jpeg" alt="Sports Games">
+            <h3>Sports Games</h3>
+        </div>
+        <div class="category-box">
+            <img src="C:\Users\shrey\Desktop\download4.jpeg" alt="Racing Games">
+            <h3>Racing Games</h3>
+        </div>
+    </div>
+
+   
+    <div class="products-section">
+        <h2 style="text-align: center; color: #f0a500;">Featured Products</h2>
+        <div class="products-grid">
+            <div class="product-card">
+                <img src="C:\Users\shrey\Desktop\apps.9688.70804610839547354.8da93c46-fd13-4b16-8ebe-e8e02c53d93e.jpeg" alt="Game 1">
+                <h4>Mortal Kombat 11</h4>
+                <p class="price">$59.99</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\shrey\Desktop\apps.30063.13589262686196899.16e3418a-cbf2-4748-9724-1c9dc9b7a0b9.jpeg" alt="Game 2">
+                <h4>Among Us</h4>
+                <p class="price">$49.99</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\shrey\Desktop\apps.25689.13909193928944040.073f4f1c-2a1f-4b23-bd2c-278a9a4a4755.jpeg" alt="Game 3">
+                <h4>Call of Duty</h4>
+                <p class="price">$39.99</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div class="product-card">
+                <img src="C:\Users\shrey\Desktop\apps.23625.13806078025361171.9723cf5e-1e29-4d9d-ad0a-cc37a95bb75d.jpeg" alt="Game 4">
+                <h4>Forza Horizon</h4>
+                <p class="price">$29.99</p>
+                <a href="#">Buy Now</a>
+            </div>
+        </div>
+    </div>
+
+  
+    <div class="footer">
+        <p>&copy; 2024 GameZone | <a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+    </div>
+
+</body>
+</html>
