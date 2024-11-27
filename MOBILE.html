@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup/Login Flow</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #e0eefc;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 450px;
+            margin: 50px auto;
+            background-color: #fad2d2;
+            padding: 30px;
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        h2 {
+            color: #4a4a4a;
+            margin-bottom: 15px;
+        }
+        .input-field {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+        .input-field:focus {
+            outline: none;
+            border-color: #4b89dc;
+        }
+        .button {
+            background-color: #4b89dc;
+            color: #fff;
+            padding: 12px 25px;
+            font-size: 18px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .button:hover {
+            background-color: #3971c2;
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: space-evenly;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .social-button {
+            background-color: #4267B2; /* Facebook color */
+            padding: 10px;
+            border-radius: 8px;
+            color: #fff;
+            font-size: 16px;
+            text-align: center;
+            width: 45%;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .social-button:hover {
+            background-color: #365899;
+        }
+        .footer-links {
+            margin-top: 15px;
+            font-size: 14px;
+            color: #777;
+        }
+        .footer-links a {
+            color: #4b89dc;
+            text-decoration: none;
+            margin: 0 5px;
+        }
+        .footer-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Welcome</h2>
+        <p>Please login or sign up to continue using the app.</p>
+
+        <!-- Sign-Up Form -->
+        <form action="/submit" method="POST">
+            <input type="text" class="input-field" placeholder="Enter your name" required />
+            <input type="email" class="input-field" placeholder="Enter your email" required />
+            <input type="password" class="input-field" placeholder="Create a password" required />
+            <button type="submit" class="button">Sign Up</button>
+        </form>
+
+        <p>OR</p>
+
+        <!-- Social Media Login Options -->
+        <div class="social-buttons">
+            <div class="social-button">Login with Facebook</div>
+            <div class="social-button" style="background-color: #1DA1F2;">Login with Twitter</div>
+        </div>
+
+        <div class="footer-links">
+            <p>Already have an account? <a href="#">Login here</a></p>
+            <p><a href="#">Privacy Policy</a> | <a href="#">Terms of Service</a></p>
+        </div>
+    </div>
+
+</body>
+</html>
